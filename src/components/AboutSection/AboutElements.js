@@ -7,10 +7,11 @@ export const AboutContainer = styled.div`
     align-items: center;
     justify-content: center;
     display: flex;
+    padding-left: 100px;
     background: ${COLORS.darkCream};
 
-    @media screen and (max-width: 1200px) {
-        height: 1500px;
+    @media screen and (max-width: 1000px) {
+        height: 1100px;
     }
 
     @media screen and (max-width: 768px) {
@@ -28,15 +29,17 @@ export const AboutWrapper = styled.div`
     display: flex;
     /* flex-direction: row; */
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1000px) {
         flex-direction: column;
         padding: 0 0px;
     }
 `
 
 export const AboutImgWrap = styled.div`
-    height: 600px;
-    min-width: 500px;
+    position: relative; 
+    bottom: 20px;
+    height: 379px;
+    max-width: 304px;
     border: 4px solid #CCD4BF;
     border-radius: 29px;
 `
@@ -51,34 +54,49 @@ export const Img = styled.img`
 export const AboutTextWrap = styled.div`
     margin-left: 120px;
     display: flex;
-    min-width: 600px;
-    max-width: 800px;
+    width: 700px;
     height: 100%;
     flex-direction: column;
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1000px) {
         margin-top: 60px;
         justify-self: center;
     }
 `
 
 export const AboutH1 = styled.h1`
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     margin-bottom: 36px;
     font-weight: bold;
     color: ${COLORS.brown};
+
+    @media screen and (max-width: 768px) {
+        margin-left: 50px;
+    }
 `
 
 export const AboutP = styled.p`
-    font-size: 1.5rem;
+    font-size: 1rem;
+    max-width: 600px;
     color: ${COLORS.brown};
-    line-height: 2rem;
+    line-height: 1.5rem;
+
+    @media screen and (max-width: 768px) {
+        font-size: 0.9rem;
+        max-width: 400px;
+        margin-left: 50px;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: 0.8rem;
+    }
 `
 
 export const AboutAccentP = styled.a`
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: ${COLORS.darkCoral};
-    line-height: 2rem;
+    
+    line-height: 1.5rem;
     text-decoration: none;
     display: inline-block;
     position: relative;
@@ -99,5 +117,9 @@ export const AboutAccentP = styled.a`
     &:hover:after {
         transform: scaleX(1);
         transform-origin: bottom left;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 0.9rem;
     }
 `

@@ -9,7 +9,7 @@ export const HeroContainer = styled.div`
     flex-grow: 1;
     min-height: 100vh;
     justify-content: center;
-    padding-top: 337px;
+    padding-top: 250px;
     width: 100%;
     position: relative;
     z-index: 1;
@@ -27,31 +27,33 @@ export const HeroContent = styled.div`
 
 export const HeroH1 = styled.h1`
     color: ${COLORS.brown};
-    font-size: 8rem;
-    text-align: center;
+    font-size: 6rem;
+    text-align: left;
 
     @media screen and (max-width: 768px) {
-        font-size: 7.5rem;
+        font-size: 5.5rem;
     }
 
     @media screen and (max-wdith: 480px) {
-        font-size: 7rem;
+        font-size: 5rem;
     }
 `
 
 export const HeroSubtitle = styled.p`
-    margin-left: 50px;
+    margin-left: 10px;
+    text-align: left;
     color: ${COLORS.pink};
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 43.58px;
     font-weight: 700;
 `
 
 export const HeroP = styled.p`
-    margin-left: 50px;
-    max-width: 600px;
-    margin-bottom: 275px;
-    font-size: 1.5rem;
+    margin-left: 10px;
+    text-align: left;
+    max-width: 450px;
+    margin-bottom: 100px;
+    font-size: 1rem;
     line-height: 27.24px;
     font-weight: 400;
     color: ${COLORS.brown};
@@ -66,8 +68,8 @@ export const IconLink = styled(Link)`
 
 export const DownArrow = styled(Arrow)`
     color: ${COLORS.brown};
-    width: 62px;
-    height: 62px; 
+    width: 50px;
+    height: 50px; 
     margin-left: 252px;
 
     &:hover {

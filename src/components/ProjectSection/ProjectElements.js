@@ -15,7 +15,7 @@ export const ProjectContainer = styled.div`
 `
 
 export const ProjectH1 = styled.h1`
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     margin-bottom: 36px;
     font-weight: bold;
     text-align: center;
@@ -40,9 +40,8 @@ export const ProjectCard = styled.div`
     flex-direction: column;
     justify-content: space-between;
     border-radius: 20px;
-    width: 500px;
-    min-height: 277px;
-    max-height: 340px;
+    width: 400px;
+    height: 250px;
     padding: 20px;
     transition: all 0.2 ease-in-out;
     border: 4px solid ${(props) => props.accentColor};
@@ -55,7 +54,7 @@ export const ProjectCard = styled.div`
 `
 
 export const ProjectH2 = styled.h2`
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     color: ${COLORS.brown};
     font-weight: 600;
     text-align: left;
@@ -63,9 +62,9 @@ export const ProjectH2 = styled.h2`
 `
 
 export const ProjectP = styled.p`
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: ${COLORS.brown};
-    line-height: 2rem;
+    line-height: 1.5rem;
     font-weight: 400;
     text-align: left;
 `

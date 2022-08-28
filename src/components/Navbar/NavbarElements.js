@@ -6,8 +6,8 @@ import COLORS from '../../utils/colors'
 export const Nav = styled.nav`
     background: ${({scrollNav}) => (scrollNav ? '#F3ECE4' : "transparent")};
     box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
-    height: 100px;
-    margin-top: -100px;
+    height: 70px;
+    margin-top: -70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,12 +32,12 @@ export const NavbarContainer = styled.div`
 `
 
 export const NavLogoWrap = styled.div`
-    margin-top: 4px;
+    margin-top: 18px;
     align-items: center;
     justify-content: center;
     justify-self: flex-start;
-    width: 64px;
-    height: 64px;
+    width: 45px;
+    height: 45px;
     border-radius: 32px;
     background-color: ${COLORS.brown};
     display: flex;
@@ -46,7 +46,7 @@ export const NavLogoWrap = styled.div`
 
 export const NavLogo = styled(LinkR)`
     color: ${COLORS.cream};
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
     text-decoration: none;
 `
@@ -55,12 +55,13 @@ export const MobileIcon = styled.div`
     display: none;
 
     @media screen and (max-width: 800px) {
+        margin-top: 7px;
         display: block;
         position: absolute;
         top: 0;
         right: 0;
         transform: translate(-100%, 60%);
-        font-size: 2rem; 
+        font-size: 1.5rem; 
         cursor: pointer;
         color: #fff;
     }
@@ -72,7 +73,7 @@ export const NavMenu = styled.ul`
     align-items: center;
     list-style: none;
     text-align: center;
-    margin-right: -22px;
+    margin-right: -10px;
 
     @media screen and (max-width: 800px) {
         display: none;
@@ -80,7 +81,7 @@ export const NavMenu = styled.ul`
 `
 
 export const NavItem = styled.li`
-    height: 80px;
+    height: 60px;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -95,6 +96,7 @@ export const NavLinks = styled(LinkS)`
     padding: 0rem 16px;
     margin-left: 20px;
     height: 100%;
+    font-size: 1rem;
     cursor: pointer;
 
     &:hover {
@@ -125,7 +127,7 @@ export const NavBtnLink = styled.a`
     white-space: nowrap;
     padding: 10px 22px;
     color: ${COLORS.brown};
-    font-size: 1.25rem;
+    font-size: 1rem;
     border: none;
     cursor: pointer;
     transition: all 0.2s ease-in-out;

@@ -2,12 +2,17 @@ import styled from 'styled-components'
 import COLORS from '../../utils/colors'
 
 export const FooterContainer = styled.div`
-    height: 450px;
+    height: 400px;
+    padding: 50px;
     background-color: ${COLORS.cream};
+
+    @media screen and (max-width: 768px) {
+        height: 500px;
+    }
 `
 
 export const FooterWrap = styled.div`
-    padding-top: 100px;
+    padding-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -16,19 +21,29 @@ export const FooterWrap = styled.div`
 `
 
 export const FooterH1 = styled.h1`
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     margin-bottom: 36px;
     font-weight: bold;
     text-align: left;
     color: ${COLORS.brown};
+
+    @media screen and (max-width: 768px) {
+        text-align: center;
+    }
 `
 
 export const BotWrap = styled.div`
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: space-between;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}   
 `
 
 
@@ -37,9 +52,10 @@ export const ContactBtn = styled.a`
     outline: 3px solid ${COLORS.pink};
     background: 'transparent';
     white-space: nowrap;
-    padding: 15px 50px;
+    padding: 12px 50px;
+    max-width: 225px;
     color: ${COLORS.brown};
-    font-size: 2rem;
+    font-size: 1.5rem;
     border: none;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
@@ -69,7 +85,7 @@ export const Img = styled.img`
 `
 
 export const FooterP = styled.p`
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: ${COLORS.brown};
     line-height: 2rem;
     font-weight: 400;
