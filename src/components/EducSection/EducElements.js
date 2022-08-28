@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import COLORS from '../../utils/colors'
 
 export const EducationContainer = styled.div`
-    height: 100vh;
+    height: 900px;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -10,7 +10,7 @@ export const EducationContainer = styled.div`
     background: ${COLORS.cream};
 
     @media screen and (max-width: 1000px) {
-        height: 1100px;
+        height: 1200px;
     }
 `
 

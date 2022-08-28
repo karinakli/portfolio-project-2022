@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import COLORS from '../../utils/colors'
 
 export const ProjectContainer = styled.div`
-    height: 100vh;
+    height: 900px;
     align-items: center;
     justify-content: center;
     display: flex;
