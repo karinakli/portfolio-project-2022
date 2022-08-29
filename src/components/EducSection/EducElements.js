@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import COLORS from '../../utils/colors'
 
 export const EducationContainer = styled.div`
-    height: 900px;
+    height: 800px;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -10,7 +10,7 @@ export const EducationContainer = styled.div`
     background: ${COLORS.cream};
 
     @media screen and (max-width: 1000px) {
-        height: 1200px;
+        height: 900px;
     }
 `
 
@@ -67,6 +67,10 @@ export const StanfordWrap = styled.div`
         padding-right: 0px;
         width: 450px;
     }
+
+    @media screen and (max-width: 480px) {
+        width: 350px;
+    }
 `
 
 export const StanfordH2 = styled.h2`
@@ -77,6 +81,10 @@ export const StanfordH2 = styled.h2`
 
     @media screen and (max-width: 1000px) {
         text-align: center;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: 1.15rem;
     }
 `
 
@@ -93,6 +101,11 @@ export const SchoolP = styled.p`
     @media screen and (max-width: 1000px) {
         position: static;
     }
+
+    @media screen and (max-width: 480px) {
+        margin-top: 8px;
+        max-width: 350px;
+    }
 `
 
 export const CourseH2 = styled.h2` 
@@ -107,6 +120,10 @@ export const CourseH2 = styled.h2`
         position: static;
         margin-top: 40px;
     }
+
+    @media screen and (max-width: 480px) {
+        font-size: 1.15rem;
+    }
 `
 
 export const ClassP = styled.p`
@@ -120,5 +137,9 @@ export const ClassP = styled.p`
 
     @media screen and (max-width: 1000px) {
         position: static;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: 0.9rem;
     }
 `

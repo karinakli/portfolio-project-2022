@@ -33,6 +33,10 @@ export const AboutWrapper = styled.div`
         flex-direction: column;
         padding: 0 0px;
     }
+
+    @media screen and (max-width: 480px) {
+        max-width: 400px;
+    }
 `
 
 export const AboutImgWrap = styled.div`
@@ -61,6 +65,12 @@ export const AboutTextWrap = styled.div`
     @media screen and (max-width: 1000px) {
         margin-top: 60px;
         justify-self: center;
+    }
+
+    @media screen and (max-width: 480px) {
+        width: 400px;
+        padding-right: 40px;
+        margin-left: 0px
     }
 `
 

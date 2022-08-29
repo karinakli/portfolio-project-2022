@@ -13,11 +13,15 @@ export const HeroContainer = styled.div`
     width: 100%;
     position: relative;
     z-index: 1;
+
+    @media screen and (max-width: 480px) {
+        padding-left: 20px;
+    }
 `
 
 export const HeroContent = styled.div`
     z-index: 3;
-    max-width: 1200px;
+    max-width: 1250px;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -27,15 +31,15 @@ export const HeroContent = styled.div`
 
 export const HeroH1 = styled.h1`
     color: ${COLORS.brown};
-    font-size: 6rem;
+    font-size: 6.5rem;
     text-align: left;
 
     @media screen and (max-width: 768px) {
-        font-size: 5.5rem;
+        font-size: 5rem;
     }
 
     @media screen and (max-wdith: 480px) {
-        font-size: 5rem;
+        font-size: 4.5rem;
     }
 `
 
@@ -62,6 +66,9 @@ export const HeroP = styled.p`
 export const IconLink = styled(Link)`
     position: relative;
     background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     outline: none;
 `
@@ -70,7 +77,6 @@ export const DownArrow = styled(Arrow)`
     color: ${COLORS.brown};
     width: 50px;
     height: 50px; 
-    margin-left: 252px;
 
     &:hover {
         transition: 0.3s ease-in-out;

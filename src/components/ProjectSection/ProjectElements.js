@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import COLORS from '../../utils/colors'
 
 export const ProjectContainer = styled.div`
-    height: 900px;
+    height: 800px;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -10,7 +10,7 @@ export const ProjectContainer = styled.div`
     background: ${COLORS.darkCream};
     
     @media screen and (max-width: 1000px) {
-        height: 1500px;
+        height: 1400px;
     }
 `
 
@@ -50,6 +50,10 @@ export const ProjectCard = styled.div`
         transform: scale(1.02);
         transition: all 0.2s ease-in-out;
         cursor: pointer;
+    }
+
+    @media screen and (max-width: 480px) {
+        width: 350px;
     }
 `
 
