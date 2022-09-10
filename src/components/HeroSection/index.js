@@ -14,7 +14,7 @@ const HeroSection = () => {
             <HeroContent>
                 <HeroSubtitle>Hi, my name is</HeroSubtitle>
                 <HeroH1>Karina Li</HeroH1>
-                <HeroP>I'm a current computer science student at Stanford interested in software development and design.</HeroP>
+                <HeroP>I'm a current computer science student at Stanford University interested in software development and design.</HeroP>
                 <IconLink to="about" onMouseEnter={onHover} onMouseLeave={onHover}
                 smooth={true} duration={500} spy={true} exact='true'>
                     <DownArrow />

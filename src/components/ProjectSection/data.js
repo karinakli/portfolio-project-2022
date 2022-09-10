@@ -19,7 +19,7 @@ export const projectTwo = {
 export const projectThree = {
     id: 'website',
     header: 'Personal Website',
-    description: 'I designed and coded this website from scratch using Figma and ReactJS.',
+    description: 'I designed and developed this website from scratch using Figma and ReactJS.',
     color: COLORS.green,
     languages: 'React'
 }
