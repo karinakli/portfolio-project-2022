@@ -8,6 +8,9 @@ export const ProjectContainer = styled.div`
     display: flex;
     flex-direction: column;
     background: ${COLORS.darkCream};
+    z-index: 1;
+    /* filter: blur(4px); */
+    /* filter: ${(props) => (props.isOpen ? 'blur(4px)' : 'blue(0)')}; */
     
     @media screen and (max-width: 1000px) {
         height: 1400px;
@@ -34,7 +37,7 @@ export const ProjectWrapper = styled.div`
     }
 `
 
-export const ProjectCard = styled.div`
+export const ProjectCard = styled.button`
     background: ${COLORS.cream};
     display: flex;
     flex-direction: column;

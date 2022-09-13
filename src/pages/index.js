@@ -6,6 +6,7 @@ import Education from '../components/EducSection'
 import ProjectSection from '../components/ProjectSection'
 import Sidebar from '../components/Sidebar'
 import Footer from '../components/Footer'
+import { Modal } from '../components/ProjectSection/Modal'
 
 
 const Home = () => {
@@ -16,7 +17,7 @@ const Home = () => {
     }
 
     return (
-        <>
+        <>  
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle}/>
             <HeroSection />
