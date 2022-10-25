@@ -143,3 +143,19 @@ export const ClassP = styled.p`
         font-size: 0.9rem;
     }
 `
+
+export const ClassBoldP = styled.p`
+    font-size: 1rem;
+    color: ${COLORS.brown};
+    line-height: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+
+    @media screen and (max-width: 1000px) {
+        position: static;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: 0.9rem;
+    }
+`

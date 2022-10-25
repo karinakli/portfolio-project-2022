@@ -24,6 +24,9 @@ const AboutSection = () => {
                 , a location-based mobile app startup for searching and booking a broad range of children’s 
                 extracurricular activities. 
                 <br /> <br />
+                I am currently working at Stanford's HCI Lab with the Interaction Design Group building ReactGenie, 
+                a programming framework for combining UI with multimodal features. 
+                <br /> <br />
                 Besides coding, you can find me performing with my dance teams, crocheting room decor, and playing 
                 solitaire!
                 </AboutP>

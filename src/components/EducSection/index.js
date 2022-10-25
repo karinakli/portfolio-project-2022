@@ -1,5 +1,5 @@
 import React from 'react'
-import { EducationWrapper, EducationContainer, EducationH1, Img, StanfordWrap, StanfordH2, ClassP, SchoolP, CourseH2 } from './EducElements'
+import { EducationWrapper, EducationContainer, EducationH1, Img, StanfordWrap, StanfordH2, ClassP, ClassBoldP, SchoolP, CourseH2 } from './EducElements'
 
 const Education = () => {
   return (
@@ -14,17 +14,20 @@ const Education = () => {
             <SchoolP>B.S. in Computer Science, Expected: June 2025</SchoolP>
              <CourseH2>Relevant Coursework</CourseH2>
              <ClassP>
-                Computer Science: <br />
+                <ClassBoldP>Computer Science:</ClassBoldP>
                 Programming Methodology (CS 106A) <br />
                 Data Structures and Abstractions (CS 106B) <br />
                 Computer Organizations and Systems (CS 107) <br />
                 An Intro to Making: What is EE (ENGR 40M) <br />
-                Mathematical Foundations of Computing (CS 103)* <br />
                 Intro to Probability for Computer Scientists (CS 109)* <br />
+                Intro to Human Computer Interaction (CS 147)* <br />
+                Cross-Platform Mobile App Development (CS 47)* <br/>
                 <br />
-                Other: <br />
+                <ClassBoldP>Product Design:</ClassBoldP>
+                Design for Learning: Co-Designing Connection and Community (DESIGN 292)* <br />
+                <br />
+                <ClassBoldP>Other:</ClassBoldP>
                 Principles of Economics (ECON 1) <br />
-                Intro to Psychology (PSYCH 1)* <br />
                 <br />
                 *in progress
              </ClassP>
