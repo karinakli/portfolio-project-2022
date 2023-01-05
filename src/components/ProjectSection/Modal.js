@@ -30,8 +30,10 @@ const Background = styled.div`
 `
 
 const ModalWrapper = styled.div`
-    width: 750px;
-    height: 500px;
+    min-width: 750px;
+    max-width: 900px;
+    padding: 5rem;
+    min-height: 500px;
     background: ${COLORS.cream};
     display: flex;
     padding: 40px;
@@ -102,7 +104,7 @@ const LinkP = styled.a`
 `
 
 
-export const Modal = ({isOpen, setIsOpen, header, tools, sourceText, sourceUrl, description}) => {
+export const Modal = ({isOpen, setIsOpen, header, tools, sourceText, sourceUrl, description, website}) => {
     const closeModal = () => {
         setIsOpen(false);
 
@@ -117,6 +119,9 @@ export const Modal = ({isOpen, setIsOpen, header, tools, sourceText, sourceUrl, 
         }
     }
 
+    const descItems = description.map((paragraph) => 
+        <p>{paragraph}</p>
+    );
 
     return (
         <>
@@ -130,7 +135,14 @@ export const Modal = ({isOpen, setIsOpen, header, tools, sourceText, sourceUrl, 
                             {sourceText}
                         </LinkP>
                     </AccentP>
-                    <p>{description}</p>
+                    {descItems}
+                    {website ? (
+                        <p>Feel free to check out {' '}
+                            <LinkP href="https://web.stanford.edu/class/cs147/projects/FindingFocus/budder/" target="_blank" rel="noreferrer">our website</LinkP>
+                            {' '}to find out more about our design process!
+
+                        </p>
+                    ):null}
                     <CloseModalButton aria-label='Close modal' onClick={closeModal} />
                 </ModalWrapper>
             </Background>

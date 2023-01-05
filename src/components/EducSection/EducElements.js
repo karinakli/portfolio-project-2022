@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import COLORS from '../../utils/colors'
 
 export const EducationContainer = styled.div`
-    height: 800px;
+    height: 900px;
     align-items: center;
     justify-content: center;
     display: flex;

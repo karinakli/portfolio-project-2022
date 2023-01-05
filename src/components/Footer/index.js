@@ -28,7 +28,7 @@ const Footer = () => {
                     </SocialMediaWrap>
                 </BotWrap>
                 
-                <FooterP>Made by Karina Li 2022</FooterP>
+                <FooterP>Made by Karina Li 2023</FooterP>
             </FooterWrap>
         </FooterContainer>
     </>

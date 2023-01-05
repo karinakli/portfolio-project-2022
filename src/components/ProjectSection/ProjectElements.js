@@ -77,13 +77,21 @@ export const ProjectP = styled.p`
 `
 
 export const LanguageWrap = styled.div`
-    width: 5.5rem;
+    min-width: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     height: 2.25rem;
     border-radius: 10px;
     background-color: ${(props) => props.accentColor};
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 1rem;
+`
+
+export const LangContainer = styled.div`
+    display: flex;
+    flex-direction: row;
 `
 
 export const ProjectP2 = styled(ProjectP)`

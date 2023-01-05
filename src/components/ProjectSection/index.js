@@ -1,28 +1,26 @@
 import React, { useState } from 'react'
 import {projectOne, projectTwo, projectThree, projectFour} from './data'
 import { Modal } from './Modal'
-import {ProjectContainer, ProjectH1, ProjectWrapper, ProjectCard, ProjectH2, ProjectP, LanguageWrap, ProjectP2} from './ProjectElements'
+import {ProjectContainer, ProjectH1, ProjectWrapper, ProjectCard, ProjectH2, ProjectP, LanguageWrap, ProjectP2, LangContainer} from './ProjectElements'
 
 const ProjectInner = ({header, shorthand, color, languages, onClick}) => {
-    
-
+    console.log(languages)
+    const languageItems = languages.map((language) =>
+        <LanguageWrap accentColor={color}>
+            <ProjectP2>{language}</ProjectP2>
+        </LanguageWrap>
+    );
 
     return (
         <div>
             <ProjectCard accentColor={color} onClick={onClick}>
-                
-                {/* <PopUpContainer
-                    isOpen={isOpen}
-                    onRequestClose={closeModal}
-                >
-                </PopUpContainer> */}
                 <div>
                     <ProjectH2>{header}</ProjectH2>
                     <ProjectP>{shorthand}</ProjectP>
                 </div>
-                <LanguageWrap accentColor={color}>
-                    <ProjectP2>{languages}</ProjectP2>
-                </LanguageWrap>
+                <LangContainer>
+                    {languageItems}
+                </LangContainer>
             </ProjectCard>
             
         </div>
@@ -72,8 +70,8 @@ const ProjectSection = () => {
         <ProjectContainer id="projects">
             <ProjectH1>Projects</ProjectH1>
             <ProjectWrapper>
-                <ProjectInner {...projectOne} onClick={openOneModal}/>
                 <ProjectInner {...projectTwo} onClick={openTwoModal}/>
+                <ProjectInner {...projectOne} onClick={openOneModal}/>
                 <ProjectInner {...projectThree} onClick={openThreeModal}/>
                 <ProjectInner {...projectFour} onClick={openFourModal}/>
             </ProjectWrapper>

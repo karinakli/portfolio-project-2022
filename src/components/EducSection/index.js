@@ -19,12 +19,16 @@ const Education = () => {
                 Data Structures and Abstractions (CS 106B) <br />
                 Computer Organizations and Systems (CS 107) <br />
                 An Intro to Making: What is EE (ENGR 40M) <br />
-                Intro to Probability for Computer Scientists (CS 109)* <br />
-                Intro to Human Computer Interaction (CS 147)* <br />
-                Cross-Platform Mobile App Development (CS 47)* <br/>
+                Intro to Probability for Computer Scientists (CS 109) <br />
+                Intro to Human Computer Interaction (CS 147) <br />
+                Cross-Platform Mobile App Development (CS 47) <br/>
+                Mathematical Foundations of Computing (CS 103)* <br />
+                From Languages to Information (CS 124)* <br />
+                Design for Behavior Change (CS 247B)* <br />
                 <br />
                 <ClassBoldP>Product Design:</ClassBoldP>
-                Design for Learning: Co-Designing Connection and Community (DESIGN 292)* <br />
+                Design for Learning: Co-Designing Connection and Community (DESIGN 292) <br />
+                Design Sketching (DESIGN 172)* <br />
                 <br />
                 <ClassBoldP>Other:</ClassBoldP>
                 Principles of Economics (ECON 1) <br />
