@@ -8,7 +8,8 @@ export const AboutContainer = styled.div`
     justify-content: center;
     display: flex;
     padding-left: 100px;
-    background: ${COLORS.darkCream};
+    background: 'white';
+    /* background: ${COLORS.darkCream}; */
 
     @media screen and (max-width: 1000px) {
         height: 1100px;

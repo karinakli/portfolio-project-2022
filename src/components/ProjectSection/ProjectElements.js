@@ -7,7 +7,8 @@ export const ProjectContainer = styled.div`
     justify-content: center;
     display: flex;
     flex-direction: column;
-    background: ${COLORS.darkCream};
+    /* background: ${COLORS.darkCream}; */
+    background: 'white';
     z-index: 1;
     /* filter: blur(4px); */
     /* filter: ${(props) => (props.isOpen ? 'blur(4px)' : 'blue(0)')}; */

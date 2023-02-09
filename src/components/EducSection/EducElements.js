@@ -7,7 +7,8 @@ export const EducationContainer = styled.div`
     justify-content: center;
     display: flex;
     flex-direction: column;
-    background: ${COLORS.cream};
+    /* background: ${COLORS.cream}; */
+    background: 'white';
 
     @media screen and (max-width: 1000px) {
         height: 900px;
@@ -48,7 +49,7 @@ export const Img = styled.img`
 
 export const StanfordWrap = styled.div`
     position: relative;
-    background: ${COLORS.darkCream};
+    background: ${COLORS.cream};
     display: flex;
     align-items: center;
     justify-content: right;

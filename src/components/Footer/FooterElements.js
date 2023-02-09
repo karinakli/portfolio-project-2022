@@ -4,7 +4,8 @@ import COLORS from '../../utils/colors'
 export const FooterContainer = styled.div`
     height: 400px;
     padding: 50px;
-    background-color: ${COLORS.cream};
+    /* background-color: ${COLORS.cream}; */
+    background: 'white';
 
     @media screen and (max-width: 768px) {
         height: 500px;

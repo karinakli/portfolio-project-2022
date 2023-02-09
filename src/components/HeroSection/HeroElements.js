@@ -4,7 +4,8 @@ import {BsFillCaretDownFill as Arrow} from 'react-icons/bs';
 import COLORS from '../../utils/colors'
 
 export const HeroContainer = styled.div`
-    background: ${COLORS.cream};
+    /* background: ${COLORS.cream}; */
+    background: 'white';
     display: flex;
     flex-grow: 1;
     min-height: 100vh;

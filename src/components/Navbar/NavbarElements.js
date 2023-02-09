@@ -4,7 +4,7 @@ import { Link as LinkS } from 'react-scroll';
 import COLORS from '../../utils/colors'
 
 export const Nav = styled.nav`
-    background: ${({scrollNav}) => (scrollNav ? '#F3ECE4' : "transparent")};
+    background: ${({scrollNav}) => (scrollNav ? 'white' : "transparent")};
     box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
     height: 70px;
     margin-top: -70px;
